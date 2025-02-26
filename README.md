@@ -38,7 +38,7 @@ Make sure you have the following installed:
 On **Arch Linux**, install them using:
 sudo pacman -S cmake python python-pybind11 curl
 
-git clone https://github.com/yourusername/NebulaBrowser.git
+git clone https://github.com/Alex-Biche/Nebula-Browser.git
 cd NebulaBrowser
 
 python -m venv .venv
