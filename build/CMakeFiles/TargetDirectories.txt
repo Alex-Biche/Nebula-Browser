@@ -1,0 +1,3 @@
+/home/alexbiche/Nebula Browser/build/CMakeFiles/nebula_engine.dir
+/home/alexbiche/Nebula Browser/build/CMakeFiles/edit_cache.dir
+/home/alexbiche/Nebula Browser/build/CMakeFiles/rebuild_cache.dir

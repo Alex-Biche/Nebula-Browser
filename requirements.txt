@@ -1,0 +1,3 @@
+pybind11
+requests
+flask  # (optional) if you need a local server
