@@ -1,53 +1,51 @@
-Nebula Browser
+# 🌌 Nebula Browser
 
-Nebula Browser is a fully open-source, modular web browser designed to provide flexibility and customization while integrating a decentralized Nebula Web system.
+Nebula Browser is a **feature-packed, customizable web browser** built from scratch, with its own **C++ rendering engine** and **Python-based high-level logic**. It supports **AENIX integration** and replaces JavaScript with **Lua** while maintaining compatibility with standard web technologies.
 
-Features
+---
 
-Modular Design: Core browser, GUI, and networking components are separate, allowing for customization and swapping.
+## 🚀 Features (Planned)
+- **Full Chrome & Firefox Extension Support** (Inspired by Orion Browser)
+- **AENIX Integration** – A decentralized internet system
+- **Custom Rendering Engine** – Built in C++ for performance
+- **Feature-Packed Interface**:
+  - 📒 **Integrated Notes App**
+  - ✨ **AI-Powered Page Summaries**
+  - 🎯 **Focus Mode**
+  - 📂 **Better Tab Organization**
+  - 📦 **Turn Websites into Desktop Apps**
+  - 🚫 **Built-in Ad & Tracker Blocker**
+  - 🌍 **AI Search Summaries & Built-in Translate**
+  - 🔎 **Search with Other Sites (Wikipedia, YouTube, etc.)**
+  - 🎨 **Canvas/Drawing App**
+  - 📋 **Clipboard Manager (Ties Notes & Canvas Together)**
+  - 🖥️ **Vertical Tab Bar & Tab Groups**
+  - 🛠️ **Highly Customizable UI**
+  - 🔍 **Hideable & Movable Search Bar**
 
-Custom GUI Support: Users can develop and use their own graphical interfaces.
+---
 
-Nebula Web Integration: Built-in NDNS (Nebula Domain Name Service) and NRS (Nebula Relay Service) for a unique browsing experience.
+## 🔧 Building the Project
 
-Package Manager & Build System: Install, update, and build components into a single executable.
+### 1️⃣ **Install Dependencies**
+Make sure you have the following installed:
+- **C++17+**
+- **Python 3.10+**
+- **CMake**
+- **Pybind11**
+- **cURL**
 
-Project Structure
+On **Arch Linux**, install them using:
+sudo pacman -S cmake python python-pybind11 curl
 
-/nebula_browser
- ├── /core_browser      # Main browser engine
- ├── /gui               # GUI system (separate from core)
- ├── /build_system      # Handles installation and packaging
- ├── /nebula_web        # Nebula networking (NDNS & NRS)
- ├── /config            # Stores user settings
- ├── /docs              # Documentation
+git clone https://github.com/yourusername/NebulaBrowser.git
+cd NebulaBrowser
 
-Installation
+python -m venv .venv
+source .venv/bin/activate  # On Linux/macOS
 
-Clone the repository:
+./build.sh
 
-git clone https://github.com/Alex-Biche/Nebula-Browser/
+---
 
-Navigate to the project directory:
-
-cd nebula-browser
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Run the browser:
-
-python core_browser/main.py
-
-License
-
-Nebula Browser is licensed under the MIT License GPL V3.
-
-Contributing
-
-Contributions are welcome! Feel free to fork the repository, submit issues, and create pull requests.
-
-Contact
-
-For questions or collaboration, reach out via nebula@alexbiche.one
+To Contribute or Contant the Project Email: nebula@alexbiche.one
