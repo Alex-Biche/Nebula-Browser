@@ -227,6 +227,15 @@ CURL_LIBRARY_DEBUG:FILEPATH=CURL_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 CURL_LIBRARY_RELEASE:FILEPATH=/usr/lib/libcurl.so
 
+//Path to a file.
+LUA_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+LUA_LIBRARY:FILEPATH=/usr/lib/liblua5.4.so
+
+//Path to a library.
+LUA_MATH_LIBRARY:FILEPATH=/usr/lib/libm.so
+
 //Value Computed by CMake
 NebulaBrowser_BINARY_DIR:STATIC=/home/alexbiche/Nebula Browser/build
 
@@ -243,7 +252,7 @@ PKG_CONFIG_ARGN:STRING=
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Dependencies for the target
-nebula_engine_LIB_DEPENDS:STATIC=general;CURL::libcurl;
+nebula_engine_LIB_DEPENDS:STATIC=general;/usr/lib/liblua5.4.so;general;/usr/lib/libm.so;general;CURL::libcurl;
 
 //Path to a library.
 pkgcfg_lib_PC_CURL_curl:FILEPATH=/usr/lib/libcurl.so
@@ -413,10 +422,18 @@ CURL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 CURL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //Details about finding CURL
 FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/libcurl.so][/usr/include][c ][v8.12.1()]
+//Details about finding Lua
+FIND_PACKAGE_MESSAGE_DETAILS_Lua:INTERNAL=[/usr/lib/liblua5.4.so;/usr/lib/libm.so][/usr/include][v5.4.7()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/home/alexbiche/Nebula Browser/.venv/bin/python3.13][/usr/include/python3.13][/usr/lib/libpython3.13.so][cfound components: Interpreter Development Development.Module Development.Embed ][v3.13.2()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.13][/usr/include/python3.13][/usr/lib/libpython3.13.so][cfound components: Interpreter Development Development.Module Development.Embed ][v3.13.2()]
 //Test HAS_FLTO
 HAS_FLTO:INTERNAL=1
+//ADVANCED property for variable: LUA_INCLUDE_DIR
+LUA_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LUA_LIBRARY
+LUA_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: LUA_MATH_LIBRARY
+LUA_MATH_LIBRARY-ADVANCED:INTERNAL=1
 PC_CURL_CFLAGS:INTERNAL=-I/usr/include
 PC_CURL_CFLAGS_I:INTERNAL=
 PC_CURL_CFLAGS_OTHER:INTERNAL=
@@ -457,7 +474,7 @@ PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Python executable during the last CMake run
-PYBIND11_PYTHON_EXECUTABLE_LAST:INTERNAL=/home/alexbiche/Nebula Browser/.venv/bin/python3.13
+PYBIND11_PYTHON_EXECUTABLE_LAST:INTERNAL=/usr/bin/python3.13
 //Python debug status
 PYTHON_IS_DEBUG:INTERNAL=0
 PYTHON_MODULE_DEBUG_POSTFIX:INTERNAL=
@@ -477,12 +494,12 @@ _Python3_DEVELOPMENT_MODULE_SIGNATURE:INTERNAL=c7c488f3f821b01c4fa35c8ea3f63c7a
 //Development reason failure
 _Python3_Development_REASON_FAILURE:INTERNAL=
 //Path to a program.
-_Python3_EXECUTABLE:INTERNAL=/home/alexbiche/Nebula Browser/.venv/bin/python3.13
+_Python3_EXECUTABLE:INTERNAL=/usr/bin/python3.13
 //Path to a file.
 _Python3_INCLUDE_DIR:INTERNAL=/usr/include/python3.13
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;2;64;<none>;cpython-313-x86_64-linux-gnu;abi3;/usr/lib/python3.13;/home/alexbiche/Nebula Browser/.venv/lib/python3.13;/home/alexbiche/Nebula Browser/.venv/lib/python3.13/site-packages;/home/alexbiche/Nebula Browser/.venv/lib/python3.13/site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=048ebf8523ca4b506506372a557a186b
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;2;64;<none>;cpython-313-x86_64-linux-gnu;abi3;/usr/lib/python3.13;/usr/lib/python3.13;/usr/lib/python3.13/site-packages;/usr/lib/python3.13/site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=3cf1743d9aa7acccc2d2c98aa826f506
 //Path to a library.
 _Python3_LIBRARY_RELEASE:INTERNAL=/usr/lib/libpython3.13.so
 //NumPy reason failure

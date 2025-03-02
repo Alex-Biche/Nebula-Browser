@@ -107,6 +107,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
   "/usr/share/cmake/Modules/FindCURL.cmake"
+  "/usr/share/cmake/Modules/FindLua.cmake"
   "/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake/Modules/FindPkgConfig.cmake"

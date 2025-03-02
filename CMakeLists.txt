@@ -15,6 +15,11 @@ add_library(nebula_engine MODULE
     engine/core/parser.cpp 
 )
 
+# Add to CMakeLists.txt
+find_package(Lua REQUIRED)
+target_link_libraries(nebula_engine PRIVATE ${LUA_LIBRARIES})
+target_include_directories(nebula_engine PRIVATE ${LUA_INCLUDE_DIR})
+
 # Set target properties to remove the 'lib' prefix
 set_target_properties(nebula_engine PROPERTIES PREFIX "")
 

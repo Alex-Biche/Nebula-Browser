@@ -4,6 +4,7 @@ nebula_engine.so: \
   CMakeFiles/nebula_engine.dir/engine/engine.cpp.o \
   CMakeFiles/nebula_engine.dir/engine/networking/fetcher.cpp.o \
   CMakeFiles/nebula_engine.dir/engine/core/parser.cpp.o \
+  /usr/lib/liblua5.4.so \
   /usr/lib/libcurl.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/libm.so \
@@ -39,6 +40,8 @@ CMakeFiles/nebula_engine.dir/engine/engine.cpp.o:
 CMakeFiles/nebula_engine.dir/engine/networking/fetcher.cpp.o:
 
 CMakeFiles/nebula_engine.dir/engine/core/parser.cpp.o:
+
+/usr/lib/liblua5.4.so:
 
 /usr/lib/libcurl.so:
 

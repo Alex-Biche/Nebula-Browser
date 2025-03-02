@@ -128,6 +128,8 @@ nebula_engine.so: CMakeFiles/nebula_engine.dir/engine/networking/fetcher.cpp.o
 nebula_engine.so: CMakeFiles/nebula_engine.dir/engine/core/parser.cpp.o
 nebula_engine.so: CMakeFiles/nebula_engine.dir/build.make
 nebula_engine.so: CMakeFiles/nebula_engine.dir/compiler_depend.ts
+nebula_engine.so: /usr/lib/liblua5.4.so
+nebula_engine.so: /usr/lib/libm.so
 nebula_engine.so: /usr/lib/libcurl.so
 nebula_engine.so: CMakeFiles/nebula_engine.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/alexbiche/Nebula Browser/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared module nebula_engine.so"
